@@ -7,6 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="NLog" Version="5.2.3" />
+    <PackageReference Include="NLog.Web.AspNetCore" Version="5.3.3" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\PetPal.DAL\PetPal.DAL.csproj" />
     <ProjectReference Include="..\PetPal.Domain\PetPal.Domain.csproj" />
   </ItemGroup>

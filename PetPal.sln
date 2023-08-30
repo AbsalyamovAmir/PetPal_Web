@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetPal.DAL", "PetPal.DAL\Pe
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{79B70526-7134-4D85-B4EE-FD149CD2FEDC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetPal.Service", "PetPal.Service\PetPal.Service.csproj", "{5FA7CDA5-63D8-46D7-A0F4-B6B67B196FA4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetPal.Service", "PetPal.Service\PetPal.Service.csproj", "{5FA7CDA5-63D8-46D7-A0F4-B6B67B196FA4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

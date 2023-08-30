@@ -8,6 +8,9 @@ namespace PetPal.Domain.Enum
 {
     public enum StatusCode
     {
+        UserNotFound = 0,
+        UserAlreadyExists = 1,
+
         PetIsHasAlready = 1,
 
         OK = 200,
