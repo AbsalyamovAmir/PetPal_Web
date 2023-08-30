@@ -17,7 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\PetPal.DAL\PetPal.DAL.csproj" />
-    <ProjectReference Include="..\PetPal.Domain.ViewModels.Pet\PetPal.Domain.ViewModels.Pet.csproj" />
+    <ProjectReference Include="..\PetPal.Service\PetPal.Service.csproj" />
   </ItemGroup>
 
 </Project>

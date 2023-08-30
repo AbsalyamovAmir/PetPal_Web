@@ -13,7 +13,5 @@ namespace PetPal.Domain.Entity
         public string Kind { get; set; }
         public string OwnerName { get; set; }
         public string Description { get; set; }
-        
-
     }
 }

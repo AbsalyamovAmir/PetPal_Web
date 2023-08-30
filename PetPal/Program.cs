@@ -1,7 +1,18 @@
 using Microsoft.EntityFrameworkCore;
 using PetPal.Dal;
+using PetPal.DAL.Interfaces;
+using PetPal.DAL.Repositories;
+using PetPal.Domain.Entity;
+using PetPal.Service.Implementations;
+using PetPal.Service.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
+
+builder.Services.AddScoped<IBaseRepository<PetEntity>, PetRepository>();
+
+builder.Services.AddScoped<IPetService, PetService>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -9,7 +20,7 @@ builder.Services.AddControllersWithViews();
 var connectionString = builder.Configuration.GetConnectionString("MSSQL");
 builder.Services.AddDbContext<AppDBContext>(options =>
 {
-    options.UseSqlServer();
+    options.UseSqlServer(connectionString);
 });
 
 var app = builder.Build();
